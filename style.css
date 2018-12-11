@@ -1,0 +1,69 @@
+#fullscreenPinata{
+    height: auto;
+    width: auto;
+    background-image: url("pinata.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+
+    transition: transform, 10ms ease;
+}
+
+#pinataModalBox{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.932);
+    z-index: 100;
+}
+
+#hitbox {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+#hitbox:hover {
+    cursor: pointer;
+}
+
+#pinata {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 20px;
+
+    transition: transform .3s ease, padding-top .3s ease, background-position .3s ease;
+}
+
+#pinata:hover {
+    transform: translateY(-50px);
+    padding-top: 50px;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: shoot 3s ease-out infinite;
+    animation-name: shoot, fade;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translate(50vw, 50vh);
+    }
+}
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}

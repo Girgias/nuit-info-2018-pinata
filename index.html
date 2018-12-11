@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="pinata.js"></script>
+        <title>EASTER EGG</title>
+    </head>
+    <body>
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+        <a class="navbar-brand" href="http://gaelpatarin.me">TraumaConseil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.php">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">A Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./referencement.php">Se faire référencer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ajoutBibliographie.php">Référencer un ouvrage</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./panel.php">Administrateur</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center container">
+        <h1 class="display-4">Lorem ipsum dolor sit amet</h1>
+        <p class="lead">
+                consectetur adipiscing elit. Nullam varius quis nibh vel tempus. Praesent ut dui risus. Duis lacinia risus vitae dolor imperdiet, sollicitudin malesuada neque fermentum. In lorem tortor, convallis id aliquet nec, molestie a sapien. Integer commodo est dolor, nec vestibulum mi luctus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at luctus elit, non lobortis urna.
+        </p>
+        <h4>Entrez le code konami pour voir apparaitre la pinata (up up down down left right left right B A)</h4>
+
+        </br>
+        <button onclick="showPinata()">Cliquez ici si le code ne marche pas</button>
+        </br>
+        (Les entrées claviers peuvent ne pas être lues pour des raisons de sécurité)
+    </div>
+
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center container">
+        <h2 class="display-8 pb-md-8">Une simple application</h2>
+        <a href='http://play.google.com/store/'><img style="max-width: 20%; height: auto;" alt='Disponible sur Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/fr_badge_web_generic.png'/></a>
+        <div class="container"> 
+            <div class="row">
+				<map name="cliquable">
+					<area shape="rect" coords="0,0,70,50" alt="xdgxdf" href="#">
+                </map>
+                
+                <div class="col">
+                    <img class="img-fluid" src="./img/phone.png"/>
+                </div>
+                
+                <div class="col" id="pinata">
+                    <img class="img-fluid" src="./img/phone.png"/>
+                </div>
+
+                <div class="col">
+                    <img class="img-fluid" src="./img/phone2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
